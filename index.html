@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Form with Validation</h1>
+        <form id="myForm" action="#" method="post">
+            <label>Email:
+                <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    required>
+            </label>
+            <label>Phone:
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <small>Format: 123-456-7890</small>
+            </label>
+            <label>Number:
+                <input type="number" id="number" name="number" pattern="^-?(?:0|[1-9]\d{0,2}(?:,?\d{3})*)(?:\.\d+)?$"
+                    required>
+            </label>
+            <label>Color:
+                <input type="color" id="color" name="color" required pattern="^#(?:[0-9a-fA-F]{3}){1,2}$">
+            </label>
+            <label>Date:
+                <input type="date" id="date" name="date" required pattern="^\d{2}-\d{2}-\d{4}$">
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
