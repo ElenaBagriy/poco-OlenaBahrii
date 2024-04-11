@@ -1,39 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form with Validation</title>
+    <title>Form Deutch</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="
+    https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+    " rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Form with Validation</h1>
-        <form id="myForm" action="#" method="post">
-            <label>Email:
-                <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                    required>
-            </label>
-            <label>Phone:
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                <small>Format: 123-456-7890</small>
-            </label>
-            <label>Number:
-                <input type="number" id="number" name="number" pattern="^-?(?:0|[1-9]\d{0,2}(?:,?\d{3})*)(?:\.\d+)?$"
-                    required>
-            </label>
-            <label>Color:
-                <input type="color" id="color" name="color" required pattern="^#(?:[0-9a-fA-F]{3}){1,2}$">
-            </label>
-            <label>Date:
-                <input type="date" id="date" name="date" required pattern="^\d{2}-\d{2}-\d{4}$">
-            </label>
-            <button type="submit">Submit</button>
+        <form action="#" method="post" class="form js-form">
+            <div class="divider"></div>
+            <h1 class="header">Profil</h1>
+            <p class="description">Hier können Sie Ihre Adress-Angaben einsehen und anpassen.</p>
+            <fieldset class="fieldset">
+                <legend class="legend">Persönliche Daten</legend>
+                <div class="field-name">
+                    <label for="titel">Titel</label>
+                    <input type="text" id="titel" name="titel" required placeholder="Dr. hc" class="input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="field-name">
+                    <label for="vorname">Vorname</label>
+                    <input id="vorname" type="text" name="vorname" required placeholder="Peter"
+                        class="input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="field-name">
+                    <label for="nachname">Nachname</label>
+                    <input id="nachname" type="text" name="nachname" required placeholder="Muster"
+                        class="input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="field-name">
+                    <span>Geschlecht</span>
+                    <div class="radio-wrapper">
+                        <input id="W" type="radio" name="geschlecht" value="W" class="radio-input">
+                        <label for="W" class="radio-label">W</label>
+                        <input id="M" type="radio" name="geschlecht" value="M" class="radio-input" checked>
+                        <label for="M" class="radio-label">M</label>
+                    </div>
+                </div>
+                <div class="field-name">
+                    <span>Sprache</span>
+                    <div class="radio-wrapper">
+                        <input id="DE" type="radio" name="sprache" value="DE" class="radio-input" checked>
+                        <label for="DE" class="radio-label">DE</label>
+                        <input id="FR" type="radio" name="sprache" value="FR" class="radio-input">
+                        <label for="FR" class="radio-label">FR</label>
+                        <input id="IT" type="radio" name="sprache" value="IT" class="radio-input">
+                        <label for="IT" class="radio-label">IT</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend class="legend">Kontaktdaten</legend>
+                <div class="field-name">
+                    <label for="telefon">Telefon</label>
+                    <input id="telefon" type="tel" name="telefon" required class="input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="field-name">
+                    <label for="mobile">Mobile</label>
+                    <input id="mobile" type="tel" name="mobile" placeholder="optional"
+                        class="input optional-input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="field-name">
+                    <label for="hauptnummer">Hauptnummer</label>
+                    <input id="hauptnummer" type="tel" name="hauptnummer" placeholder="optional"
+                        class="input optional-input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="field-name">
+                    <label for="fax">Fax</label>
+                    <input id="fax" type="tel" name="fax" placeholder="optional"
+                        class="input optional-input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="field-name">
+                    <label for="email1">Mail 1</label>
+                    <input id="email1" type="email" name="email1" required class="input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="field-name">
+                    <label for="email2">Mail 2</label>
+                    <input id="email2" type="email" name="email2" placeholder="optional"
+                        class="input optional-input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend class="legend">Adressdaten</legend>
+                <div class="field-name">
+                    <label for="firma">Firma</label>
+                    <input id="firma" type="text" name="firma" required class="input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="field-name">
+                    <label for="zusatz-firma">Zusatz Firma</label>
+                    <input id="zusatz-firma" type="text" name="zusatz-firma" placeholder="optional"
+                        class="input optional-input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="field-name">
+                    <label for="homepage">Homepage</label>
+                    <input id="homepage" type="url" name="homepage" placeholder="optional"
+                        class="input optional-input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="field-name">
+                    <span>Adresse / Haus Nr</span>
+                    <div class="input-wrapper">
+                        <label for="strasse"></label>
+                        <input id="strasse" type="text" name="strasse" required placeholder="Musterstrasse"
+                            class="input short-input js-clearable">
+                        <button type="button" class="clear-button long js-button">
+                            <svg width="22" height="22">
+                                <use href="./sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                        <label for="hausnummer"></label>
+                        <input id="hausnummer" type="number" name="hausnummer" required placeholder="33"
+                            class="input number-input js-clearable">
+                        <button type="button" class="clear-button js-button">
+                            <svg width="22" height="22">
+                                <use href="./sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="field-name">
+                    <label for="zusatz-adresse">Zusatz Adresse</label>
+                    <input id="zusatz-adresse" type="text" name="zusatz-adresse" placeholder="optional"
+                        class="input optional-input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="field-name">
+                    <label for="postfach">Postfach</label>
+                    <input id="postfach" type="text" name="postfach" placeholder="optional"
+                        class="input optional-input js-clearable">
+                    <button type="button" class="clear-button js-button">
+                        <svg width="22" height="22">
+                            <use href="./sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="field-name">
+                    <span>PLZ / Ort</span>
+                    <div class="input-wrapper">
+                        <label for="plz"></label>
+                        <input id="plz" type="number" name="plz" placeholder="8800" required
+                            class="input number-input js-clearable">
+                        <button type="button" class="clear-button short js-button">
+                            <svg width="22" height="22">
+                                <use href="./sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                        <label for="ort"></label>
+                        <input id="ort" type="text" name="ort" placeholder="Musterstadt" required
+                            class="input short-input js-clearable">
+                        <button type="button" class="clear-button js-button">
+                            <svg width="22" height="22">
+                                <use href="./sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="field-name">
+                    <span>Kanton / Land</span>
+                    <div class="input-wrapper">
+                        <label for="kanton"></label>
+                        <input id="kanton" type="text" name="kanton" placeholder="ZH" required
+                            class="input number-input js-clearable">
+                        <button type="button" class="clear-button short js-button">
+                            <svg width="22" height="22">
+                                <use href="./sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                        <label for="land"></label>
+                        <input id="land" type="text" name="land" placeholder="Schweiz" required
+                            class="input short-input js-clearable">
+                        <button type="button" class="clear-button js-button">
+                            <svg width="22" height="22">
+                                <use href="./sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit" class="submit-button">Spreichern</button>
         </form>
     </div>
+    <script type="module" src="./index.js"></script>
 </body>
 
 </html>
