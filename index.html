@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple layout exercise</title>
+    <title>Slider exercise</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="
     https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
@@ -13,38 +13,42 @@
 </head>
 
 <body>
-    <header>
-        <button type="button" aria-controls="mobile-menu" aria-expanded="true" class="js-open-menu button visible">
-            <svg class="icon" width="64">
-                <use href="./sprite.svg#burger"></use>
-            </svg>
-        </button>
-        <nav class="menu-container">
-            <ul class="list">
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/">About</a>
-                </li>
-                <li>
-                    <a href="/">Work</a>
-                </li>
-                <li>
-                    <a href="/">Blog</a>
-                </li>
-                <li>
-                    <a href="/">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <button type="button" aria-controls="mobile-menu" class="js-close-menu button invisible">
-            <svg class="icon" width="64">
-                <use href="./sprite.svg#close"></use>
-            </svg>
-        </button>
-    </header>
-    <main></main>
+    <main>
+        <ul class="slide-list">
+            <li class="slide" id="slide-1">
+                <p>1</p>
+            </li>
+            <li class="slide" id="slide-2">
+                <p>2</p>
+            </li>
+            <li class="slide" id="slide-3">
+                <p>3</p>
+            </li>
+            <li class="slide" id="slide-4">
+                <p>4</p>
+            </li>
+            <li class="slide" id="slide-5">
+                <p>5</p>
+            </li>
+        </ul>
+        <ul class="link-list">
+            <li>
+                <a href="#slide-1">1</a>
+            </li>
+            <li>
+                <a href="#slide-2">2</a>
+            </li>
+            <li>
+                <a href="#slide-3">3</a>
+            </li>
+            <li>
+                <a href="#slide-4">4</a>
+            </li>
+            <li>
+                <a href="#slide-5">5</a>
+            </li>
+        </ul>
+    </main>
     <script type="module" src="./mobile-menu.js"></script>
     <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> -->
 </body>
