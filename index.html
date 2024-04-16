@@ -13,44 +13,40 @@
 </head>
 
 <body>
-    <main>
-        <h1 class="header">NEXT LOOK AT THIS <span class="bold">COOL STUFF</span></h1>
-        <ul class="list">
-            <li class="item">
-                <img src="./fff.png" alt="sizes image" />
-                <h2 class="item-header">A REALLY FAST TRAIN</h2>
-                <p class="item-description">Nunc eleifend lectus eget nunc ultrices, nec ullamcorper dui blandit.
-                    Vivamus lobortis turpis at
-                    ligula cursus pulvinar.
-                    Fusce hendrerit eget lacus at ultricies. Curabitur vitae nisi ac nunc.</p>
-            </li>
-            <li class="item">
-                <img src="./fff.png" alt="sizes image" />
-                <h2 class="item-header">AN AIRPORT TERMINAL</h2>
-                <p class="item-description">In lectus velit, sagittis eu lectus vitae, tincidunt sodales ipsum.
-                    Suspendisse pharetra tincidunt
-                    eros, ac semper risus
-                    bibendum id. Vestibulum ornare nunc sed est pulvinar ornare eget ut.</p>
-            </li>
-            <li class="item">
-                <img src="./fff.png" alt="sizes image" />
-                <h2 class="item-header">HYPERSPACE TRAVEL</h2>
-                <p class="item-description">In rutrum facilisis nulla ac ultrices. Cras a erat eu turpis mattis blandit.
-                    Cras diam mi, tempus nec
-                    iaculis vitae,
-                    suscipit sed arcu. Nam justo lectus, suscipit a.</p>
-            </li>
-            <li class="item">
-                <img src="./fff.png" alt="sizes image" />
-                <h2 class="item-header">AND ANOTHER TRAIN</h2>
-                <p class="item-description">Sed eu leo non sem mollis lacinia. Nulla tincidunt viverra nunc, vel dictum
-                    urna dictum vel.
-                    Pellentesque vulputate
-                    mollis feugiat. Donec et diam ac justo feugiat pretium eu.</p>
-            </li>
-        </ul>
-        <button type="button"> SEE MORE</button>
-    </main>
+    <header>
+        <button type="button" aria-controls="mobile-menu" aria-expanded="true" class="js-open-menu button visible">
+            <svg class="icon" width="64">
+                <use href="./sprite.svg#burger"></use>
+            </svg>
+        </button>
+        <nav class="menu-container">
+            <ul class="list">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/">About</a>
+                </li>
+                <li>
+                    <a href="/">Work</a>
+                </li>
+                <li>
+                    <a href="/">Blog</a>
+                </li>
+                <li>
+                    <a href="/">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <button type="button" aria-controls="mobile-menu" class="js-close-menu button invisible">
+            <svg class="icon" width="64">
+                <use href="./sprite.svg#close"></use>
+            </svg>
+        </button>
+    </header>
+    <main></main>
+    <script type="module" src="./mobile-menu.js"></script>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> -->
 </body>
 
 </html>
